@@ -1,0 +1,6 @@
+- model: reports.organ
+  fields:
+    name: "duodenum"
+    name_de: "Duodenum"
+    name_en: "Duodenum"
+    components_ordered: True

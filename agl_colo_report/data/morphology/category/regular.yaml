@@ -1,0 +1,36 @@
+# morphology/polyp_morphology.yaml
+
+- model: reports.morphology_classification
+  fields:
+    name: "polyp-morphology-regular-unknown"
+    name_de: "unbekannt"
+    name_en: "unknown"
+    classification: "polyp-morphology-regular"
+
+- model: reports.morphology_classification
+  fields:
+    name: "flat"
+    name_de: "flach"
+    name_en: "flat"
+    classification: "polyp-morphology-regular"
+
+- model: reports.morphology_classification
+  fields:
+    name: "pedunculated"
+    name_de: "gestielt"
+    name_en: "pedunculated"
+    classification: "polyp-morphology-regular"
+  
+- model: reports.morphology_classification
+  fields:
+    name: "sessile"
+    name_de: "sessil"
+    name_en: "sessile"
+    classification: "polyp-morphology-regular"
+
+- model: reports.morphology_classification
+  fields:
+    name: "excavated"
+    name_de: "exkaviert"
+    name_en: "excavated"
+    classification: "polyp-morphology-regular"

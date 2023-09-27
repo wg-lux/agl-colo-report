@@ -1,0 +1,54 @@
+- model: reports.SizeCategory
+  fields:
+    name: "polyp-size-category-unknown"
+    name_de: "Unbekannt"
+    name_en: "unknown"
+    size_min: -1
+    size_max: -1
+    unit: "millimeter"
+    classification: "polyp-size-classification-regular"
+    description: "unknown"
+
+- model: reports.SizeCategory
+  fields:
+    name: "polyp-size-category-diminutive"
+    name_de: "0 mm < Polyp < 6 mm"
+    name_en: "0 mm < Polyp < 6 mm"
+    size_min: 0
+    size_max: 6
+    unit: "millimeter"
+    classification: "polyp-size-classification-regular"
+    description: ""
+
+- model: reports.SizeCategory
+  fields:
+    name: "polyp-size-category-small"
+    name_de: "6 mm < Polyp < 10 mm"
+    name_en: "6 mm < Polyp < 10 mm"
+    size_min: 6
+    size_max: 10
+    unit: "millimeter"
+    classification: "polyp-size-classification-regular"
+    description: ""
+
+- model: reports.SizeCategory
+  fields:
+    name: "polyp-size-category-medium"
+    name_de: "10 mm < Polyp < 20 mm"
+    name_en: "10 mm < Polyp < 20 mm"
+    size_min: 10
+    size_max: 20
+    unit: "millimeter"
+    classification: "polyp-size-classification-regular"
+    description: ""
+
+- model: reports.SizeCategory
+  fields:
+    name: "polyp-size-category-large"
+    name_de: "20 mm < Polyp"
+    name_en: "20 mm < Polyp"
+    size_min: 20
+    size_max: 999
+    unit: "millimeter"
+    classification: "polyp-size-classification-regular"
+    description: ""

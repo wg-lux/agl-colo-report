@@ -1,0 +1,16 @@
+- model: reports.interventiontype
+  fields:
+    name: diagnostic
+    name_de: Diagnostische Intervention
+    name_en: Diagnostische Intervention
+    description: ''
+
+- model: reports.interventiontype
+  fields:
+    name: therapeutic
+    name_de: Therapeutische Intervention
+    name_en: therapeutic Intervention
+    description: ''
+
+
+

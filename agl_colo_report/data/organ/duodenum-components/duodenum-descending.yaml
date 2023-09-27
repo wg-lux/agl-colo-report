@@ -1,0 +1,8 @@
+
+- model: reports.organcomponent
+  fields:
+    organ: "duodenum"
+    name: "duodenum_descending"
+    name_de: "Absteigend"
+    name_en: "Descending"
+    component_order_id: 2

@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "large_intestines"
+    name: "rectum"
+    name_de: "Rektum"
+    name_en: "rectum"
+    component_order_id: 10

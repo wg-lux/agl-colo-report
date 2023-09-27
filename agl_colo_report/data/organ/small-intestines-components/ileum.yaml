@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "small_intestines"
+    name: "ileum"
+    name_de: "Ileum"
+    name_en: "Ileum"
+    component_order_id: 2

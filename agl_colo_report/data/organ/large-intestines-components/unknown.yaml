@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "large_intestines"
+    name: "unknown"
+    name_de: "unknown"
+    name_en: "unknown"
+    component_order_id: -1

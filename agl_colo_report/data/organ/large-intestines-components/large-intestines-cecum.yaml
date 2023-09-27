@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "large_intestines"
+    name: "cecum"
+    name_de: "Zökum"
+    name_en: "Cecum"
+    component_order_id: 3

@@ -1,0 +1,47 @@
+<!-- base.html -->
+{% load bootstrap4 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Colonoscopy Reports{% endblock %}</title>
+
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="{{ csrf_token }}">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap4.min.css">
+  
+  <!-- Custom CSS -->
+  <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body class="base-body">
+    <div class="d-flex flex-row">  <!-- Use d-flex and flex-row here -->
+      {% block content %}
+      {% endblock %}
+    </div>
+
+  <!-- Footer -->
+  {% include 'utils/footer.html' %}
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- DataTables JS -->
+  <script type="text/javascript" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Custom JS -->
+  {% block custom_scripts %}
+  {% endblock %}
+</body>
+</html>

@@ -1,0 +1,49 @@
+- model: reports.anastomosis
+  fields:
+    component_1: "descending-colon"
+    connection_type_1: "end"
+    component_2: "rectum"
+    connection_type_2: "end"
+    name: "descendo-recto-stomy-end-to-end"
+    name_de: "Descendo-Rektostomie (End-zu-End)"
+    name_en: "Descendo-recto-stomy (end-to-end)"
+
+- model: reports.anastomosis
+  fields:
+    component_1: "ileum"
+    connection_type_1: "end"
+    component_2: "ascending-colon"
+    connection_type_2: "end"
+    name: "ileo-ascendo-stomy-end-to-end"
+    name_de: "Ileo-Ascendostomie (End-zu-End)"
+    name_en: "Ileo-ascendo-stomy (end-to-end)"
+
+- model: reports.anastomosis
+  fields:
+    component_1: "ileum"
+    connection_type_1: "side"
+    component_2: "ascending-colon"
+    connection_type_2: "side"
+    name: "ileo-ascendo-stomy-side-to-side"
+    name_de: "Ileo-Ascendostomie (Seit-zu-Seit)"
+    name_en: "Ileo-ascendo-stomy (side-to-side)"
+
+- model: reports.anastomosis
+  fields:
+    component_1: "ileum"
+    connection_type_1: "end"
+    component_2: "transverse-colon"
+    connection_type_2: "end"
+    name: "ileo-transverso-stomy-end-to-end"
+    name_de: "Ileo-Transversostomie (End-zu-End)"
+    name_en: "Ileo-transverso-stomy (end-to-end)"
+
+- model: reports.anastomosis
+  fields:
+    component_1: "transverse-colon"
+    connection_type_1: "end"
+    component_2: "sigmoid-colon"
+    connection_type_2: "end"
+    name: "transverso-sigmo-stomy-end-to-end"
+    name_de: "Transverso-Sigmastomie (End-zu-End)"
+    name_en: "Transverso-sigmo-stomy (end-to-end)"

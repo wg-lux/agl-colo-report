@@ -1,0 +1,6 @@
+- model: reports.organ
+  fields:
+    name: "small_intestines"
+    name_de: "Dünndarm"
+    name_en: "Small Intestines"
+    components_ordered: True

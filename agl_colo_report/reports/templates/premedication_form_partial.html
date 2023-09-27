@@ -1,0 +1,26 @@
+{% load bootstrap4 %}
+{% load custom_filters %}
+
+<p>Applied Drugs</p>
+{% for drugapp in drugapp_formset %}
+    {# Access variable drug_list from context and set drug = drug_list[i] #}
+    {% with drug=drug_list|get_item:forloop.counter0 %}
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            {# Initial checkbox state is true if drug.name is in ["oxygen", "propofol"] #}
+            {% if drug.name|is_in:"oxygen,propofol" %}
+            <input type="checkbox" class="form-check-input" id="{{ drug.name }}-checkbox" data-toggle-form="{{ drug.name }}-form" checked>
+            {% else %}
+            <input type="checkbox" class="form-check-input" id="{{ drug.name }}-checkbox" data-toggle-form="{{ drug.name }}-form">
+            {% endif %}
+            <label class="form-check-label" for="{{ drug.name }}-checkbox">{{ drug.name }}</label>
+        {# </div> #}
+        {# <div class="col-md-10"> #}
+            <div id="{{ drug.name }}-form" class="drugapp-form" {% if not drug.name|is_in:'oxygen,propofol' %}style="display:none;"{% endif %}>
+                {# Render the form here using Django's form API #}
+                {% bootstrap_form drugapp %}
+            </div>
+        </div>
+    </div>
+    {% endwith %}
+{% endfor %}

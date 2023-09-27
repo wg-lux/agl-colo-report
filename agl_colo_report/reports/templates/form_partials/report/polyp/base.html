@@ -1,0 +1,28 @@
+<!-- report/polyp/base.html -->
+<!-- must be called from for loop with polyp_form and polyp_attributes_forms -->
+<!-- polyp_form is the form for the polyp itself -->
+<!-- polyp_attribute_forms is a dict of forms for the polyp attributes -->
+<div class="polyp-form form-group" data-polyp-id="{{ forloop.counter }}">
+    {# DEFINE POLYP ID? #}
+    <div id="polyp-form-container" class="col-md-12"> 
+        {{ polyp_formset.management_form }}
+        <label>Polyp {{ forloop.counter }}</label>
+        {% bootstrap_form polyp_form layout='horizontal' %}
+        
+        <!-- Include Polyp Attribute Forms -->
+        {% include "report/polyp/location.html"  %}
+        {% include "report/polyp/morphology.html"  %}
+        {# {% include "report/polyp/size.html"  %} #}
+
+        {# Implement for loop #}
+        {# {% include "report/polyp/intervention/base.html" %} #}
+    </div>
+</div>
+
+
+    
+</div>
+
+<div class="row">
+    <button type="button" class="btn btn-primary" id="add-polyp-btn">Add Polyp</button>
+</div>

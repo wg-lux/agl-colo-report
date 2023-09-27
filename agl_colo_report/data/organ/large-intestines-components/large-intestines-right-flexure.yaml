@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "large_intestines"
+    name: "right_flexure_colon"
+    name_de: "Rechte Flexur"
+    name_en: "left flexure"
+    component_order_id: 5

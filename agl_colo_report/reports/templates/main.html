@@ -1,0 +1,57 @@
+<!-- main.html -->
+
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block title %}ColoReport{% endblock %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" style="text-align:center">
+            <h4>Select Patient</h4>
+        </div>
+        <div class="col-md-6" style="text-align:center">
+            <h4>Select Report</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="row" style="text-align:left">
+                {# m-2 introduces a margin #}
+                <button class="btn btn-primary m-2 medium-width-btn" id="add-patient-btn">Create Patient</button>
+            </div>
+            <div class="row" style="text-align:left">
+                <button class="btn btn-secondary m-2 medium-width-btn" id="create-report-btn">Create Report</button>
+            </div>
+        </div>
+        <div class="col-md-5" style="text-align:center">
+            {% include "tables/patient.html" %}
+        </div>
+        <div class="col-md-5" style="text-align:center"></div>
+    </div>
+</div>
+
+
+{% include "modals/patient_modal.html" %}
+{% endblock %}
+
+
+{% block custom_scripts %}
+    <script type="module" src="{% static 'js/main.js' %}"></script>
+{% endblock %}
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4" style="text-align:center"></div>
+    <div class="col-md-4" style="text-align:center"></div>
+    <div class="col-md-2"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-5" style="text-align:center"></div>
+    <div class="col-md-5" style="text-align:center"></div>
+    <div class="col-md-2"></div>
+</div>

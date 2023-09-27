@@ -1,0 +1,18 @@
+- model: reports.MorphologyClassification
+  fields:
+    name: "polyp-morphology-regular"
+    name_de: "Polypenmorphologie (Kategorien)"
+    name_en: "Polyp morphology (categories)"
+    pathology_types: [
+      "colon-polyp"
+    ]
+
+- model: reports.MorphologyClassification
+  fields:
+    name: "polyp-morphology-paris"
+    name_de: "Polypenmorphologie (PARIS)"
+    name_en: "Polyp morphology (PARIS)"
+    pathology_types: [
+      "colon-polyp"
+    ]
+

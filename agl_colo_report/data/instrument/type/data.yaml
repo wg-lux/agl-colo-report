@@ -1,0 +1,9 @@
+- model: reports.InstrumentType
+  fields:
+    name: "endoscopy-instrument"
+    name_de: "Endoskopie Instrument"
+    name_en: "Endoscopy Instrument"
+
+
+
+

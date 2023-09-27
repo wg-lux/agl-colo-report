@@ -1,0 +1,42 @@
+<!-- landing_page.html -->
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block title %}Landing Page{% endblock %}
+{% block content %}
+  <h1>Landing Page</h1>
+
+  <button class="btn btn-primary open-patient-modal">Add Patient</button>
+
+  <br>
+
+<h2>Select Patient to Create Report</h2>
+  <ul>
+    {% for patient in patients %}
+      <li>
+        <!-- Added a class 'create-report' and data-patient-id attribute to the anchor tag -->
+        <a href="#" class="create-report" data-patient-id="{{ patient.id }}">{{ patient.first_name }} {{ patient.last_name }}</a>
+        
+        <!-- Dropdown for selecting reports -->
+        <select id="reportSelect{{ patient.id }}" class="report-dropdown">
+          {% for report in patient.reports.all %}
+            <option value="{{ report.id }}">{{ report.date_of_procedure }}</option>
+          {% endfor %}
+        </select>
+        
+        <!-- Button to open the modal -->
+        <button data-patient-id="{{ patient.id }}" class="btn btn-secondary update-report">Open Report</button>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Report Modal HTML -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  {% include 'report_modal.html' %}
+  {% include "patient_modal.html" %}
+
+  <!-- Custom JavaScript -->
+  <script src="{% static 'js/landingPage.js' %}"></script>
+
+{% endblock %}

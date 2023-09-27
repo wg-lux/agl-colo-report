@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "large_intestines"
+    name: "ileocecal-valve"
+    name_de: "Ileocekalklappe"
+    name_en: "Ileocecal Valve"
+    component_order_id: 1

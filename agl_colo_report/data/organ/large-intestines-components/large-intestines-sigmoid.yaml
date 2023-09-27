@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "large_intestines"
+    name: "sigmoid-colon"
+    name_de: "Sigma"
+    name_en: "Sigmoid Colon"
+    component_order_id: 9

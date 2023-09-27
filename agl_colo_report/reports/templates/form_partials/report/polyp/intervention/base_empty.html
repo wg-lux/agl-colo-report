@@ -1,0 +1,17 @@
+<div id="polyp-form-empty-template" class="polyp-form form-group" style="display:none;">
+    <label>Polyp Template</label>
+    <!-- Assume empty_polyp_form and empty_polyp_attribute_forms are passed in context -->
+    {% bootstrap_form empty_polyp_form layout='horizontal' %}
+    {% bootstrap_form empty_polyp_attribute_forms.polyp_location layout='horizontal' %}
+    {% bootstrap_form empty_polyp_attribute_forms.polyp_morphology layout='horizontal' %}
+    <button type="button" class="btn btn-danger remove-polyp-btn">Remove</button>
+</div>
+
+{# 
+<div id="polyp-template" class="polyp-form form-group" style="display: none;">
+    <label></label>
+    {% bootstrap_form empty_polyp_form layout='horizontal' %}
+    <button type="button" class="btn btn-success duplicate-polyp-btn">Duplicate</button>
+    <button type="button" class="btn btn-danger remove-polyp-btn">Remove</button>
+    <hr>
+</div> #}

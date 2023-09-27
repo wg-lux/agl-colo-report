@@ -1,0 +1,48 @@
+<!-- templates/report_form_partial.html -->
+{% load bootstrap4 %}
+
+
+
+<form id="form" class="form-horizontal">
+    <div class="row">
+        <h4>Patient Data</h4>
+        <div class="col-md-12">
+            {% bootstrap_form report_form layout='horizontal' %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="premedication-form-container">
+            {{ premedication_formset.management_form }}        
+            {% for premedication_form in premedication_formset %}
+                <div class="premedication-form form-group">
+                    <label>Premedication</label>
+                    {% bootstrap_form premedication_form layout='horizontal' %}
+                </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="drug_application-form-container">
+            {{ drugapp_formset.management_form }}
+            {% include "premedication_form_partial.html" %}
+        </div>
+    </div>
+    <div class="row">
+    
+        <div id="polyp-form-container" class="col-md-12">
+        {{ polyp_formset.management_form }}
+            {% for polyp_form in polyp_formset %}
+                {% for polyp_form, polyp_attribute_forms in polyps_with_attributes %}
+                {% include "polyp_form_partial.html" %}
+            {% endfor %}
+                
+        </div>
+    </div>
+    <div class="row">
+        <button type="button" class="btn btn-primary" id="add-polyp-btn">Add Polyp</button>
+    </div>
+</form>
+
+

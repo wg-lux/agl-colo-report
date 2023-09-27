@@ -1,0 +1,6 @@
+- model: reports.organ
+  fields:
+    name: "large_intestines"
+    name_de: "Dickdarm"
+    name_en: "Large Intestines"
+    components_ordered: True

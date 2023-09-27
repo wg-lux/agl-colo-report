@@ -1,0 +1,4 @@
+from .main import ExaminationSerializer
+from .examination_time import ExaminationTimeSerializer
+from .examination_type import ExaminationTypeSerializer
+from .examination_time_type import ExaminationTimeTypeSerializer

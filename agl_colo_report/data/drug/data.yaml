@@ -1,0 +1,28 @@
+# drugs.yaml
+
+- model: reports.drug
+  fields:
+    name: "propofol"
+    abbreviation: "Prop"
+    name_de: "Propofol"
+    name_en: "Propofol"
+    description: "Anesthetic agent used for sedation"
+    preferred_unit: "milligram"
+
+- model: reports.drug
+  fields:
+    name: "midazolam"
+    abbreviation: "Mid"
+    name_de: "Midazolam"
+    name_en: "Midazolam"
+    description: "Sedative used for anesthesia"
+    preferred_unit: "milligram"
+
+- model: reports.drug
+  fields:
+    name: "oxygen"
+    abbreviation: "O2"
+    name_de: "Sauerstoff"
+    name_en: "Oxygen"
+    description: "Gas used for respiratory support"
+    preferred_unit: "liters-per-minute"

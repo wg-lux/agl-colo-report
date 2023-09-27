@@ -1,0 +1,17 @@
+- model: reports.anastomosistype
+  fields:
+    name: "end"
+    name_de: "End"
+    name_en: "End"
+
+- model: reports.anastomosistype
+  fields:
+    name: "side"
+    name_de: "Side"
+    name_en: "Side"
+
+- model: reports.anastomosistype
+  fields:
+    name: "unknown"
+    name_de: "Unbekannt"
+    name_en: "Unknown"

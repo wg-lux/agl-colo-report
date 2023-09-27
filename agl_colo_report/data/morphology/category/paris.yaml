@@ -1,0 +1,52 @@
+# morphology/polyp_morphology.yaml
+
+- model: reports.morphology_classification
+  fields:
+    name: "polyp-morphology-paris-unknown"
+    name_de: "unbekannt"
+    name_en: "unknown"
+    classification: "polyp-morphology-paris"
+    
+
+- model: reports.morphology_classification
+  fields:
+    name: "polyp-morphology-paris-1p"
+    name_de: "Ip"
+    name_en: "Ip"
+    classification: "polyp-morphology-paris"
+
+- model: reports.morphology_classification
+  fields:
+    name: "polyp-morphology-paris-1s"
+    name_de: "Is"
+    name_en: "Is"
+    classification: "polyp-morphology-paris"
+
+- model: reports.morphology_classification
+  fields:
+    name: "polyp-morphology-paris-2a"
+    name_de: "IIa"
+    name_en: "IIa"
+    classification: "polyp-morphology-paris"
+
+- model: reports.morphology_classification
+  fields:
+    name: "polyp-morphology-paris-2b"
+    name_de: "IIb"
+    name_en: "IIb"
+    classification: "polyp-morphology-paris"
+
+- model: reports.morphology_classification
+  fields:
+    name: "polyp-morphology-paris-2c"
+    name_de: "IIc"
+    name_en: "IIc"
+    classification: "polyp-morphology-paris"
+
+- model: reports.morphology_classification
+  fields:
+    name: "polyp-morphology-paris-3"
+    name_de: "III"
+    name_en: "III"
+    classification: "polyp-morphology-paris"
+

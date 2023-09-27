@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "large_intestines"
+    name: "descending-colon"
+    name_de: "Colon Descendens"
+    name_en: "Descending Colon"
+    component_order_id: 8

@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "duodenum"
+    name: "duodenum_bulbus"
+    name_de: "Bulbus"
+    name_en: "Bulbus"
+    component_order_id: 1

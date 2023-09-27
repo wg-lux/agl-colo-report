@@ -1,0 +1,7 @@
+# colonoscopy
+- model: report.IndicationType
+  fields:
+    name: "indication-colonoscopy"
+    name_de: "Indikation Koloskopie"
+    name_en: "Indication Colonoscopy"
+

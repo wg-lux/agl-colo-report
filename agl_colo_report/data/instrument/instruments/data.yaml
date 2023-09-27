@@ -1,0 +1,55 @@
+- model: reports.Instrument
+  fields:
+    name: "biopsy-forceps"
+    name_de: "Biopsie-Zange"
+    name_en: "Biopsy Foreceps"
+    instrument_types: ["endoscopy-instrument"]
+
+# biopsy-foreceps-jumbo
+- model: reports.Instrument
+  fields:
+    name: "biopsy-forceps-jumbo"
+    name_de: "Biopsie-Zange (Jumbo)"
+    name_en: "Biopsy Foreceps (Jumbo)"
+    instrument_types: ["endoscopy-instrument"]
+
+# snare-cold-regular
+- model: reports.Instrument
+  fields:
+    name: "snare-cold-regular"
+    name_de: "Schlinge (kalt)"
+    name_en: "Snare (cold)"
+    instrument_types: ["endoscopy-instrument"]
+
+# snare-diathermic
+- model: reports.Instrument
+  fields:
+    name: "snare-diathermic"
+    name_de: "Schlinge (diathermisch)"
+    name_en: "Snare (diathermic)"
+    instrument_types: ["endoscopy-instrument"]
+
+# snare-unknown
+- model: reports.Instrument
+  fields:
+    name: "snare-unknown"
+    name_de: "Schlinge (unbekannt)"
+    name_en: "Snare (unknown)"
+    instrument_types: ["endoscopy-instrument"]
+
+# injection-needle
+- model: reports.Instrument
+  fields:
+    name: "injection-needle"
+    name_de: "Injektionsnadel"
+    name_en: "Injection Needle"
+    instrument_types: ["endoscopy-instrument"]
+
+# hemoclip
+- model: reports.Instrument
+  fields:
+    name: "hemoclip"
+    name_de: "Hemoclip"
+    name_en: "Hemoclip"
+    instrument_types: ["endoscopy-instrument"]
+

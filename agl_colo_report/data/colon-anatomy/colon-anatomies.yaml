@@ -1,0 +1,88 @@
+- model: reports.colonanatomy
+  fields:
+    available_segments:
+      - "ileocecal-valve"
+      - "appendix"
+      - "cecum"
+      - "ascending-colon"
+      - "transverse-colon"
+      - "descending-colon"
+      - "sigmoid-colon"
+      - "rectum"
+    name: "colon-unknown"
+    name_de: "Unbekannt"
+    name_en: "unknown"
+
+- model: reports.colonanatomy
+  fields:
+    available_segments:
+      - "ileocecal-valve"
+      - "appendix"
+      - "cecum"
+      - "ascending-colon"
+      - "transverse-colon"
+      - "descending-colon"
+      - "sigmoid-colon"
+      - "rectum"
+    name: "colon-normal"
+    name_de: "Normalbefund"
+    name_en: "Colon normal"
+
+- model: reports.colonanatomy
+  fields:
+    available_segments:
+      - "ascending-colon"
+      - "transverse-colon"
+      - "descending-colon"
+      - "sigmoid-colon"
+      - "rectum"
+    available_anastomoses:
+      - "ileo-ascendo-stomy-end-to-end"
+    name: "colon-after-ileocecal-resection"
+    name_de: "Z. n. Ileozökalresektion"
+    name_en: "Colon after ileocecal resection"
+
+- model: reports.colonanatomy
+  fields:
+    available_segments:
+      - "ileocecal-valve"
+      - "appendix"
+      - "cecum"
+      - "ascending-colon"
+      - "transverse-colon"
+      - "descending-colon"
+      - "rectum"
+    available_anastomoses:
+      - "descendo-recto-stomy-end-to-end"
+    name: "colon-after-sigma-resection"
+    name_de: "Z. n. Sigmaresektion"
+    name_en: "Colon after sigma resection"
+
+- model: reports.colonanatomy
+  fields:
+    available_segments:
+      - "ileocecal-valve"
+      - "appendix"
+      - "cecum"
+      - "ascending-colon"
+      - "transverse-colon"
+      - "sigmoid-colon"
+      - "rectum"
+    available_anastomoses:
+      - "transverso-sigmo-stomy-end-to-end"
+    name: "colon-after-left-hemicolectomy"
+    name_de: "Z. n. linker Hemikolektomie"
+    name_en: "Colon after left hemicolectomy"
+    
+- model: reports.colonanatomy
+  fields:
+    available_segments:
+      - "transverse-colon"
+      - "descending-colon"
+      - "sigmoid-colon"
+      - "rectum"
+    available_anastomoses:
+      - "ileo-ascendo-stomy-end-to-end"
+    name: "colon-after-right-hemicolectomy"
+    name_de: "Z. n. rechter Hemikolektomie"
+    name_en: "Colon after right hemicolectomy"

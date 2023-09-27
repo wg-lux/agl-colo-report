@@ -1,0 +1,40 @@
+# colonoscopy-screening
+- model: report.Indication
+  fields:
+    name: "indication-colonoscopy-screening"
+    name_de: "Indikation Koloskopie Screening"
+    name_en: "Indication Colonoscopy Screening"
+    indication_types: [
+      "indication-colonoscopy",
+    ]
+
+# colonoscopy-surveillance
+- model: report.Indication
+  fields:
+    name: "indication-colonoscopy-surveillance"
+    name_de: "Indikation Koloskopie Surveillance"
+    name_en: "Indication Colonoscopy Surveillance"
+    indication_types: [
+      "indication-colonoscopy",
+    ]
+
+# symptomatic
+- model: report.Indication
+  fields:
+    name: "indication-symptomatic"
+    name_de: "Indikation Symptomatisch"
+    name_en: "Indication Symptomatic"
+    indication_types: [
+      "indication-colonoscopy",
+    ]
+
+# unknown
+- model: report.Indication
+  fields:
+    name: "indication-unknown"
+    name_de: "Indikation Unbekannt"
+    name_en: "Indication Unknown"
+    indication_types: [
+      "indication-colonoscopy",
+    ]
+

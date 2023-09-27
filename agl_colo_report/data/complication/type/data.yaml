@@ -1,0 +1,21 @@
+# colonoscopy-complication
+- model: report.ComplicationType
+  fields:
+    name: "colonoscopy-complication"
+    name_de: "Komplikationen Koloskopie"
+    name_en: "Complications Colonoscopy"
+
+# colonoscopy-intervention-complication
+- model: report.ComplicationType
+  fields:
+    name: "colonoscopy-intervention-complication"
+    name_de: "Komplikationen Intervention"
+    name_en: "Complications Intervention"
+
+# polyp-removal-complication
+- model: report.ComplicationType
+  fields:
+    name: "colonoscopy-polyp-removal-complication"
+    name_de: "Komplikationen Polypenentfernung"
+    name_en: "Complications Polyp Removal"
+

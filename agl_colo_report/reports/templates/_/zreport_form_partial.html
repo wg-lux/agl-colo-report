@@ -1,0 +1,48 @@
+{# <!-- report_form_partial.html -->
+
+{% load bootstrap4 %}
+{% load static %}
+
+<form id="reportForm" method="post">
+    {% csrf_token %}
+    {% bootstrap_form report_form %}
+
+    <!-- Hidden Django Form Management Fields -->
+    <input type="hidden" id="id_form-TOTAL_FORMS" name="form-TOTAL_FORMS" value="0">
+    <input type="hidden" id="id_form-INITIAL_FORMS" name="form-INITIAL_FORMS" value="0">
+    <input type="hidden" id="id_form-MIN_NUM_FORMS" name="form-MIN_NUM_FORMS" value="0">
+    <input type="hidden" id="id_form-MAX_NUM_FORMS" name="form-MAX_NUM_FORMS" value="1000">
+    <input type="hidden" id="patient_id" name="patient_id" value="{{ patient_id }}">
+
+    {% if report_id %}
+        <input type="hidden" id="report_id" name="report_id" value="{{ report_id }}">
+    {% endif %}
+
+    <!-- ColonPolyp Formset -->
+    <h3>Polyps</h3>
+    <div id="polyp-formset-wrapper">
+        <!-- Empty, this will be filled by JavaScript -->
+    </div>
+
+    <!-- Button to add new form -->
+    <button id="add-polyp-form" type="button" class="btn btn-primary">Add Polyp</button>
+
+    <!-- Button to toggle visibility of polyp formset -->
+    <button id="toggle-polyp-forms" type="button" class="btn btn-secondary">Toggle Polyp Forms</button>
+
+    <br><br>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+<!-- Empty polyp form template -->
+<div id="empty-polyp-form" style="display:none;">
+    {% bootstrap_form polyp_formset.empty_form %}
+    <!-- Empty location form template -->
+    <div id="empty-location-form" style="display:none;">
+        {% bootstrap_form empty_location_form %}
+    </div>
+</div>
+
+<!-- custom javascript -->
+<script src="{% static 'js/reportFormPartial.js' %}"></script> #}

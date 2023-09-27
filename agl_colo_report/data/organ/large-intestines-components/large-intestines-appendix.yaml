@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "large_intestines"
+    name: "appendix"
+    name_de: "Appendix"
+    name_en: "Appendix"
+    component_order_id: 2

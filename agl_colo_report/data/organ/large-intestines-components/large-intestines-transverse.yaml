@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "large_intestines"
+    name: "transverse-colon"
+    name_de: "Colon Transversum"
+    name_en: "Transverse Colon"
+    component_order_id: 6

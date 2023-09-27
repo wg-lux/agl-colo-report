@@ -1,0 +1,7 @@
+- model: reports.organcomponent
+  fields:
+    organ: "small_intestines"
+    name: "jejunum"
+    name_de: "Jejunum"
+    name_en: "Jejunum"
+    component_order_id: 1

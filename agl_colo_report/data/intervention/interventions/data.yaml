@@ -1,0 +1,106 @@
+# interventions.yaml
+
+- model: reports.intervention
+  fields:
+    name: regular-biopsy
+    name_de: Reguläre Biopsie
+    name_en: Regular Biopsy
+    pathology_types: [
+      "colon-healthy",
+      "colon-location-healthy",
+      "colon-polyp",
+      "colon-stenosis",
+      "colon-anastomosis",
+      "colon-ulceration"
+    ]
+    intervention_types: [diagnostic]
+    abbreviation: RB
+    description: ''
+- model: reports.intervention
+  fields:
+    name: stepwise-biopsy
+    name_de: Stufenbiopsie
+    name_en: Stepwise Biopsy
+    abbreviation: SWB
+    description: ''
+    pathology_types: [
+      "colon-healthy",
+    ]
+    intervention_types: [diagnostic]
+
+# - polyectomy-snare-cold
+- model: reports.intervention
+  fields:
+    name: polypectomy-snare-cold
+    name_de: Schlingen-Polypektomie (kalt)
+    name_en: Polypectomy with snare (cold)
+    abbreviation: PSC
+    description: ''
+    pathology_types: [
+      "colon-polyp",
+    ]
+    intervention_types: [diagnostic, therapeutic]
+
+# - polypectomy-snare-diathermic
+- model: reports.intervention
+  fields:
+    name: polypectomy-snare-diathermic
+    name_de: Schlingen-Polypektomie (diathermisch)
+    name_en: Polypectomy with snare (diathermic)
+    abbreviation: PSD
+    description: ''
+    pathology_types: [
+      "colon-polyp",
+    ]
+    intervention_types: [diagnostic, therapeutic]
+
+# - polypectomy-snare-unknown
+- model: reports.intervention
+  fields:
+    name: polypectomy-snare-unknown
+    name_de: Schlingen-Polypektomie (unbekannt)
+    name_en: Polypectomy with snare (unknown)
+    abbreviation: PSU
+    description: ''
+    pathology_types: [
+      "colon-polyp",
+    ]
+    intervention_types: [diagnostic, therapeutic]
+
+# - polypectomy-grasper
+- model: reports.intervention
+  fields:
+    name: polypectomy-grasper
+    name_de: Polypektomie mit Zange
+    name_en: Polypectomy with grasper
+    abbreviation: PZ
+    description: ''
+    pathology_types: [
+      "colon-polyp",
+    ]
+    intervention_types: [diagnostic, therapeutic]
+
+# - thermocoagulation
+- model: reports.intervention
+  fields:
+    name: thermocoagulation-apc
+    name_de: Thermokoagulation
+    name_en: Thermocoagulation
+    abbreviation: TK
+    description: ''
+    pathology_types: [
+    ]
+    intervention_types: [therapeutic]
+
+# - clip-application
+- model: reports.intervention
+  fields:
+    name: clip-application
+    name_de: Clip-Applikation
+    name_en: Clip application
+    abbreviation: CA
+    description: ''
+    pathology_types: [
+      colon-bleeding
+    ]
+    intervention_types: [therapeutic]

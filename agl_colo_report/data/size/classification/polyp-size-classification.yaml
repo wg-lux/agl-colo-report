@@ -1,0 +1,8 @@
+- model: reports.SizeClassification
+  fields:
+    name: "polyp-size-classification-regular"
+    name_de: "Polypengröße (Kategorien)"
+    name_en: "Polyp size (categories)"
+    pathology_types: [
+      "colon-polyp"
+    ]

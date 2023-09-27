@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"favorites.resources": [
+			{
+				"filePath": "agl_colo_report\\reports\\models",
+				"group": "Default"
+			},
+			{
+				"filePath": "agl_colo_report\\reports\\forms",
+				"group": "Default"
+			},
+			{
+				"filePath": "agl_colo_report\\reports\\static\\js",
+				"group": "Default"
+			},
+			{
+				"filePath": "agl_colo_report\\reports\\views",
+				"group": "Default"
+			},
+			{
+				"filePath": "agl_colo_report\\reports\\templates",
+				"group": "Default"
+			}
+		],
+		"favorites.groups": [
+			"Default",
+			"views"
+		],
+		"favorites.currentGroup": "Default",
+		"favorites.sortOrder": "ASC"
+	}
+}

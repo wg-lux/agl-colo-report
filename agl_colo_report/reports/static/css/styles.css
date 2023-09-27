@@ -1,0 +1,59 @@
+/* Styles.css */
+
+.medium-width-btn {
+    width: 150px;  /* Set width as needed */
+    text-align: center;
+}
+
+.sidebar {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.2s;
+    height: 100%;
+}
+
+.sidebar-list {
+    list-style-type: none;
+    padding-top: 60px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+/* Toggle button styles */
+.toggle-btn {
+    font-size: 30px;
+    margin: 10px;
+    background: none;
+    border: none;
+    color: #818181;
+    cursor: pointer;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.toggle-btn:focus {
+    outline: none;
+}
+
+/* Footer Custom Class */
+.footer-custom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.scrollable-list {
+    height: 600px; /* or any height you'd like */
+    overflow-y: auto;
+  }

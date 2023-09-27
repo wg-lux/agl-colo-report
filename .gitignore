@@ -1,3 +1,13 @@
+# sqlite3
+*.sqlite3
+
+# logs
+logs/*
+
+# environment
+*.env
+.vscode/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

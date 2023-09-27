@@ -1,0 +1,11 @@
+# bleeding
+- model: report.Complication
+  fields:
+    name: "bleeding"
+    name_de: "Blutung"
+    name_en: "Bleeding"
+    complication_types: [
+      "colonoscopy-complication",
+      "colonoscopy-intervention-complication",
+      "colonoscopy-polyp-removal-complication",
+    ]

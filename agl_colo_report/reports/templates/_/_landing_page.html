@@ -1,0 +1,51 @@
+<!-- landing_page.html -->
+
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block title %}Landing Page{% endblock %}
+{% block content %}
+  <div class="container-fluid">
+    <div class="row" style="height: 500px;">  <!-- Fixed height -->
+      <div class="col-md-6">  <!-- Taking the full width of the row -->
+          <h2>Select a Patient</h2>
+        <button class="btn btn-primary" id="add-patient-btn">Patient</button>
+        {% include "fetch_patients.html" %}
+      </div>
+
+      <div class="col-md-6">
+        <h2 id="selected-patient-header">No Patient Selected.</h2>
+        <button class="btn btn-secondary" id="edit-patient-btn">Edit Patient</button>
+        <button class="btn btn-secondary" id="create-report-btn">Create Report</button>
+        {% include "fetch_reports.html" %}
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Report</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-2"><button class="btn btn-danger" id="delete-report-btn">Delete Report</button></div>
+      <div class="col-md-8"></div>
+        
+        <div id="edit-report">
+          <h3>No Report Selected.</h3>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  {# <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> #}
+
+  {% include "patient_modal.html" %}
+  {% include "report_modal.html" %}
+
+
+
+{% endblock %}

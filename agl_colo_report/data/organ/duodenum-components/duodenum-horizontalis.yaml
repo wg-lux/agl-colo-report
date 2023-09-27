@@ -1,0 +1,8 @@
+
+- model: reports.organcomponent
+  fields:
+    organ: "duodenum"
+    name: "duodenum_horizontalis"
+    name_de: "Pars horizontalis"
+    name_en: "Pars horizontalis"
+    component_order_id: 3

@@ -1,0 +1,47 @@
+- model: reports.PathologyType
+  fields:
+    name: "colon-pathology"
+
+- model: reports.PathologyType
+  fields:
+    name: "polyp"
+
+
+
+- model: reports.PathologyType
+  fields:
+    name: "unknown"
+
+- model: reports.PathologyType
+  fields:
+    name: "colon-healthy"
+
+- model: reports.PathologyType
+  fields:
+    name: "colon-polyp"
+
+- model: reports.PathologyType
+  fields:
+    name: "colon-adenoma"
+
+- model: reports.PathologyType
+  fields:
+    name: "colon-location-healthy"
+
+- model: reports.PathologyType
+  fields:
+    name: "colon-stenosis"
+
+# colon-anastomosis
+- model: reports.PathologyType
+  fields:
+    name: "colon-anastomosis"
+
+# colon-bleeding
+- model: reports.PathologyType
+  fields:
+    name: "colon-bleeding"
+
+- model: reports.PathologyType
+  fields:
+    name: "colon-ulceration"
