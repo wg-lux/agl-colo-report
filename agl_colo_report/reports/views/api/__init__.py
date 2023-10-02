@@ -2,6 +2,7 @@ from .patient_views import (
     PatientList,
     PatientCreateView,
     PatientAPIView,
+    PatientListTableView
 )
 
 from .patient import (
@@ -10,11 +11,16 @@ from .patient import (
 )
 
 from .report_views import (
+    CreateReportAPIView,
+    ReportListTableView,
     ReportListCreateView,
     ReportRetrieveUpdateDestroyView,
+    GetReportAPIView,
+    UpdateReportAPIView,
 )
 
 from .polyp_views import (
     ColonPolypListCreateView,
     ColonPolypRetrieveUpdateDestroyView,
+    CreateColonPolypAPIView,
 )

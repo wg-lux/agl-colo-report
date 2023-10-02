@@ -30,10 +30,22 @@ urlpatterns = [
     
     # API VIEWS
     path('api/patient/', views.api.PatientAPIView.as_view(), name='api_patient'),
+    # for easier readability and maintainability we use the same view in different urls
+    path("api/patient/save/", views.api.PatientAPIView.as_view(), name="save_patient"),
     path('api/patients/', views.api.PatientList.as_view(), name='patient-list'),
+    path("api/patients/get-table/", views.api.PatientListTableView.as_view(), name="get_patient_table"),
     path('api/patients/create-view', views.api.PatientCreateView.as_view(), name='get_patient'),
-    path("api/reports/list-create-view", views.api.ReportListCreateView.as_view(), name="get_report"),
-    path("api/reports/modify-view/<int:pk>/", views.api.ReportRetrieveUpdateDestroyView.as_view(), name="get_report"),
+    
+    path("api/reports/get-table/", views.api.ReportListTableView.as_view(), name="get_report_table"),    
+    path('api/reports/create/', views.api.CreateReportAPIView.as_view(), name='create_report'),
+    path('api/reports/get-report/<int:report_id>/', views.api.GetReportAPIView.as_view(), name='get_report'),
+    path('api/reports/update-report/<int:report_id>/', views.api.UpdateReportAPIView.as_view(), name='update_report'),
+    path("api/reports/list-create-view", views.api.ReportListCreateView.as_view(), name="get_report_list"),
+    # path("api/reports/modify-view/<int:pk>/", views.api.ReportRetrieveUpdateDestroyView.as_view(), name="get_report"),
+    path("api/colon-polyp/create/", views.api.CreateColonPolypAPIView.as_view(), name="create_colonpolyp"),
+    
+    
+    
     path('api/colonpolyps/create-view', views.api.ColonPolypListCreateView.as_view(), name='colonpolyp-list-create'),
     path('api/colonpolyps/modify/-view/<int:pk>/', views.api.ColonPolypRetrieveUpdateDestroyView.as_view(), name='colonpolyp-retrieve-update-destroy'),
     

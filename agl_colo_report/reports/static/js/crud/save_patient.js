@@ -1,4 +1,4 @@
-export function savePatient() {
+export function saveCurrentPatientData(currentPatientData, csrftoken) {
     // log necessary globals
     console.log("Saving patient");
     console.log("Current patient data:", currentPatientData);
@@ -7,7 +7,7 @@ export function savePatient() {
         url: '/api/patient/',
         method: 'POST',
         headers: { 'X-CSRFToken': csrftoken },
-        data: $('#patientForm').serialize(),
+        data: currentPatientData,// $('#patientForm').serialize(),
         success: function(response) {
             if(response.success) {
                 // Close modal and refresh page or data

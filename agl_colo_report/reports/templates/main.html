@@ -9,14 +9,6 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-6" style="text-align:center">
-            <h4>Select Patient</h4>
-        </div>
-        <div class="col-md-6" style="text-align:center">
-            <h4>Select Report</h4>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-md-2">
             <div class="row" style="text-align:left">
                 {# m-2 introduces a margin #}
@@ -27,10 +19,24 @@
             </div>
         </div>
         <div class="col-md-5" style="text-align:center">
+            <h4>Select Patient</h4>
+        </div>
+        <div class="col-md-5" style="text-align:center">
+            <h4>Select Report</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6" style="text-align:center">
             {% include "tables/patient.html" %}
         </div>
-        <div class="col-md-5" style="text-align:center"></div>
+        <div class="col-md-6" style="text-align:center">
+            {% include "tables/report.html" %}
+        </div>
     </div>
+
+    {# REPORT EDITOR #}
+    {% include "report_editor.html" %}
+
 </div>
 
 
@@ -39,7 +45,7 @@
 
 
 {% block custom_scripts %}
-    <script type="module" src="{% static 'js/main.js' %}"></script>
+<script type="module" src="{% static 'js/main.js' %}"></script>
 {% endblock %}
 
 <div class="row">

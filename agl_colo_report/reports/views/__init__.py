@@ -2,7 +2,6 @@ from .main import main
 
 from . import api
 
-
 from .landing_page import landing_page
 from .patient import (
     fetch_patient,
@@ -10,6 +9,7 @@ from .patient import (
     fetch_patient_form,
     save_patient
 )
+
 from .utils import get_available_segments
 # from .report import (
 #     fetch_reports_for_patient,

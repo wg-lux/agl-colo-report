@@ -1,13 +1,14 @@
 from .shared.unit import Unit
 from .patient import Patient
+from .colon_anatomy import ColonAnatomy
 from .report import Report, ALTERED_COLON_CHOICES
 from .organ import Organ
 from .organ_component import OrganComponent
 from .anastomosis_type import AnastomosisType
 from .anastomosis import Anastomosis
-from .colon_anatomy import ColonAnatomy
 from .pathology_type import PathologyType
-from .colon_polyp import (
+from .findings import (
+    ReportFindings,
     ColonPolyp,
     ColonPolypMorphology,
     ColonPolypLocation,

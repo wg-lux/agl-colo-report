@@ -17,7 +17,7 @@ class Drug(models.Model):
     preferred_unit = models.ForeignKey('Unit', on_delete=models.SET_NULL, blank=True, null=True)
 
     def __str__(self):
-        return self.abbreviation
+        return self.name_en
     
     def natural_key(self):
         return (self.name,)

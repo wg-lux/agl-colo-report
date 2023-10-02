@@ -17,6 +17,10 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS("Running load_unit_data..."))
         call_command('load_unit_data', verbose=verbose)
 
+        # Run the load_pathology_type_data command
+        self.stdout.write(self.style.SUCCESS("Running load_pathology_type_data..."))
+        call_command('load_pathology_type_data', verbose=verbose)
+
         # Run the load_size_data command
         self.stdout.write(self.style.SUCCESS("Running load_size_data..."))
         call_command('load_size_data', verbose=verbose)
@@ -61,9 +65,7 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS("Running load_information_source..."))
         call_command('load_information_source', verbose=verbose)
 
-        # Run the load_pathology_type_data command
-        self.stdout.write(self.style.SUCCESS("Running load_pathology_type_data..."))
-        call_command('load_pathology_type_data', verbose=verbose)
+        
 
         # Run the load_intervention_data command
         self.stdout.write(self.style.SUCCESS("Running load_intervention_data..."))

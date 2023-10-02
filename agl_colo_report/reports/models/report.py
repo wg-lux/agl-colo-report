@@ -3,8 +3,11 @@ from .patient import Patient
 from .colon_anatomy import ColonAnatomy
 from .organ_component import OrganComponent
 from .premedication import Premedication
+from .findings import ReportFindings
+
 from django.utils.html import format_html, mark_safe
 from django.utils.timezone import now
+
 
 ALTERED_COLON_CHOICES = [
         ("yes", "Yes"),
@@ -15,6 +18,10 @@ ALTERED_COLON_CHOICES = [
 def get_altered_colon_choices_default():
     return ALTERED_COLON_CHOICES[2][0]
 
+def get_current_date():
+    current_date = now().date()
+    return current_date
+
 import warnings
 
 class Report(models.Model):
@@ -22,7 +29,7 @@ class Report(models.Model):
         Patient, related_name="reports", on_delete=models.CASCADE
     )
 
-    date_of_procedure = models.DateField(default=now)
+    date_of_procedure = models.DateField(default=get_current_date)
 
     altered_colon_anatomy = models.CharField(
         max_length=10, choices=ALTERED_COLON_CHOICES, default="no"
@@ -36,6 +43,7 @@ class Report(models.Model):
             on_delete=models.SET_NULL,
         )
     except:
+        print("Colon anatomy 'colon-normal' does not exist. Please create it in the admin interface.")
         colon_anatomy = models.ForeignKey(
             ColonAnatomy, null=True, on_delete=models.SET_NULL
         )
@@ -70,7 +78,9 @@ class Report(models.Model):
 
         # If it's a new Report object, create a corresponding Premedication object
         if is_new:
-            Premedication.objects.create(report=self)
+            _premed = Premedication.objects.create(report=self)
+            _premed.create_drug_applications()
+            ReportFindings.objects.create(report=self)
 
 
     # The class ColonPolyp has a foreign key to Report with the related name 'polyps'

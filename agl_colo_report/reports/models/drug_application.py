@@ -14,7 +14,7 @@ class DrugApplication(models.Model):
         Drug,
         on_delete=models.CASCADE,
     )
-    value = models.IntegerField(null=True, blank=True)
+    value = models.IntegerField(default=0, null=True, blank=True)
     unit = models.ForeignKey(
         Unit,
         null=True,  # shouldnt happen, only for cascading where we want to set null
