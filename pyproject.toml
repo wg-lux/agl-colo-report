@@ -15,6 +15,7 @@ ffmpeg-python = "^0.2.0"
 flake8 = "^3.9.2"
 numpy = "^1.21.2"
 djangorestframework = "^3.14.0"
+django-bootstrap4 = "^23.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.4.2"
